@@ -19,7 +19,7 @@ lowest_rating <- office_ratings %>%
 office_ratings %>% 
   ggplot(aes(factor(season), imdb_rating, col = factor(season))) +
   geom_point(aes(size = total_votes), position = position_jitter(width = 0.04), alpha = 0.65) +
-  labs(title = "The Distribution of Friends's IMDb Rating", subtitle = "Which Episode Got the Highest and Lowest?", x = "Season", y = "Rating", size = "Total Votes") +
+  labs(title = "The Office's IMDb Rating", subtitle = "Which Episode Got the Highest and Lowest?", x = "Season", y = "Rating", size = "Total Votes") +
   guides(col = FALSE) +
   geom_text(data = highest_rating, aes(label = title), size = 3, nudge_y = 0.095) +
   geom_text(data = lowest_rating, aes(label = title), size = 3, nudge_y = -0.095) +
