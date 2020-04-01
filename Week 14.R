@@ -22,6 +22,6 @@ beer_states %>%
                      expand = c(0,0)) +
   scale_color_brewer(palette = "Dark2",
                      breaks = c("On Premises", "Bottles and Cans", "Kegs and Barrels")) +
-  labs(title = "Growth of Total Barrels Produced in USA", x = "Year", y = "Growth", color = "Type") +
+  labs(title = "Growth of Total Barrels Produced in the USA", x = "Year", y = "Growth", color = "Type") +
   theme_economist() +
   transition_reveal(year)
